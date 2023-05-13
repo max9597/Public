@@ -1471,10 +1471,6 @@ G2L["8f"]["Name"] = [[scripthub]];
 G2L["90"] = Instance.new("ModuleScript", G2L["8f"]);
 G2L["90"]["Name"] = [[scripts]];
 
--- StarterGui.backdoor.exe v8.games
-G2L["91"] = Instance.new("ModuleScript", G2L["1"]);
-G2L["91"]["Name"] = [[games]];
-
 -- StarterGui.backdoor.exe v8.config
 G2L["92"] = Instance.new("ModuleScript", G2L["1"]);
 G2L["92"]["Name"] = [[config]];
@@ -2805,114 +2801,25 @@ end;
 G2L_MODULES[G2L["90"]] = {
 Closure = function()
     local script = G2L["90"];
-    return {}
-end;
-};
-G2L_MODULES[G2L["91"]] = {
-Closure = function()
-    local script = G2L["91"];
--- services
-local tweenService = game:GetService("TweenService");
-local marketService = game:GetService('MarketplaceService');
-local teleportService = game:GetService("TeleportService");
-
--- ui
-local utils = require(script.Parent.utils)
-local config = require(script.Parent.config);
-local container = script.Parent.Main.BodyClipping.Games.InnerBody.ScrollingFrame;
-
-local dummy = container.dummy;
-dummy.Parent = nil;
-
--- vars
-local backFormat = dummy.Backdoors.Text;
-local dateFormat = dummy.Date.Text;
-local teleporting = false;
-
-local ID_CARD = {};
-
--- IMPORTANT, config.save must be called by the caller to actually store the games
-local function loadGame(placeId, backdoors, timestamp)
-	placeId = tonumber(placeId); -- make sure json string index is converted to number
-	timestamp = timestamp or os.time();
-	-- check backdoors
-	if type(backdoors) ~= "table" or #backdoors == 0 then
-		return;
-	end
-	-- retrive game info
-	local integrity, gameProduct = pcall(marketService.GetProductInfo, marketService, placeId);
-	-- check integrity
-	if not integrity then
-		return; -- skip game
-	end
-	-- update settings
-	config.data.games[placeId] = {
-		backdoors = backdoors,
-		timestamp = timestamp
-	};
-	-- check if card is already instanciated
-	local card = ID_CARD[placeId];
-	if not card then
-		local gameIcon = gameProduct.IconImageAssetId;
-		local gameName = gameProduct.Name;
-		-- gameIcon check
-		if gameIcon == 0 then
-			gameIcon = 3033152788;
-		end
-		card = dummy:Clone();
-		card.Parent = container;
-		card.GameIcon.Image = "rbxassetid://" .. gameIcon;
-		card.Title.Text = gameName;
-	end
-	-- update
-	local dateTime = DateTime.fromUnixTimestamp(timestamp);
-	card.Backdoors.Text = backFormat:format(#backdoors);
-	card.Date.Text = dateFormat:format(dateTime:ToIsoDate());
-	-- animation
-	card.Play.Hitbox.MouseLeave:Connect(function()
-		tweenService:Create(card.Play,
-			utils.tweenInfo.move,
-			{
-				Size = UDim2.new(0, 30, 1, 0)
-			}
-		):Play();
-	end);
-	card.Play.Hitbox.MouseEnter:Connect(function()
-		tweenService:Create(card.Play,
-			utils.tweenInfo.move,
-			{
-				Size = UDim2.new(0, 90, 1, 0)
-			}
-		):Play();
-	end);
-	-- teleport function
-	card.Play.Hitbox.MouseButton1Click:Connect(function()
-		if teleporting then
-			return;
-		end
-		teleporting = true;
-		teleportService:Teleport(placeId);
-	end)
-	ID_CARD[placeId] = card;
-	-- make text info not visible
-	container.info.Visible = false;
-end
-
-local function loadGames(games)
-	for placeId, gameObj in next, games do
-		loadGame(placeId, gameObj.backdoors, gameObj.timestamp);
-	end
-end
-
-loadGames(config.data.games);
-
-
 return {
-	loadGame = loadGame,
-	loadGames = loadGames	
-};
+	Dex = "require(4786706026):dex('%username%')",
+	Minecraft = "require(5820669639)('%username%')",
+	CrashUI = "require(6053693667).Crashexe('%username%')",
+	R6 = "require(4585652241).load('%username%')",
+	KillBot = "require(3904000898).load('%username%')",
+	YingYang = "require(4875966146).load('%username%')",
+	HackerMan = "require(4876105392).load('%username%')",
+	SakuraHub = "require(5536569504):SH('%username%')",
+	Fraud = "require(4952179933).Fraud('%username%')",
+	F3X = "require(4869378421).F3X('%username%')",
+	UndetectedHub = "require(5673170715).Leak('%username%')",
+	PoliceAI = "require(7163976217).VK('%username%')",
+	TankAI = "require(7203746402).tonk('%username%')",
+	JuggernautAI = "require(7486656912).Juggernaut('%username%')"
+}
 end;
 };
+
 G2L_MODULES[G2L["92"]] = {
 Closure = function()
     local script = G2L["92"];
