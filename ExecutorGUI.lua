@@ -14,8 +14,7 @@ local G2L = {};
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["ResetOnSpawn"] = false;
 G2L["1"]["Name"] = [[backdoor.exe v8]];
-G2L["1"]["ZIn
-Behavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.backdoor.exe v8.Main
 G2L["2"] = Instance.new("Frame", G2L["1"]);
@@ -2802,20 +2801,7 @@ G2L_MODULES[G2L["90"]] = {
 Closure = function()
     local script = G2L["90"];
 return {
-	Dex = "require(4786706026):dex('%username%')",
-	Minecraft = "require(5820669639)('%username%')",
-	CrashUI = "require(6053693667).Crashexe('%username%')",
-	R6 = "require(4585652241).load('%username%')",
-	KillBot = "require(3904000898).load('%username%')",
-	YingYang = "require(4875966146).load('%username%')",
-	HackerMan = "require(4876105392).load('%username%')",
-	SakuraHub = "require(5536569504):SH('%username%')",
-	Fraud = "require(4952179933).Fraud('%username%')",
-	F3X = "require(4869378421).F3X('%username%')",
-	UndetectedHub = "require(5673170715).Leak('%username%')",
-	PoliceAI = "require(7163976217).VK('%username%')",
-	TankAI = "require(7203746402).tonk('%username%')",
-	JuggernautAI = "require(7486656912).Juggernaut('%username%')"
+	Dex = "print'find dex yourself lol'"
 }
 end;
 };
