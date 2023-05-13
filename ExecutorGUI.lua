@@ -175,43 +175,6 @@ G2L["12"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom;
 G2L["12"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["12"]["Padding"] = UDim.new(0, 10);
 
--- StarterGui.backdoor.exe v8.Main.Sidebar.Bottom.InviteBtn
-G2L["13"] = Instance.new("ImageLabel", G2L["11"]);
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["ImageColor3"] = Color3.fromRGB(35, 35, 35);
-G2L["13"]["Image"] = [[rbxassetid://3570695787]];
-G2L["13"]["Size"] = UDim2.new(0, 28, 0, 28);
-G2L["13"]["Name"] = [[InviteBtn]];
-G2L["13"]["BackgroundTransparency"] = 1;
-
--- StarterGui.backdoor.exe v8.Main.Sidebar.Bottom.InviteBtn.ImageLabel
-G2L["14"] = Instance.new("ImageLabel", G2L["13"]);
-G2L["14"]["ScaleType"] = Enum.ScaleType.Fit;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["ImageColor3"] = Color3.fromRGB(182, 182, 182);
-G2L["14"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["14"]["Image"] = [[rbxassetid://4503342956]];
-G2L["14"]["Size"] = UDim2.new(0.7229999899864197, 0, 0.7229999899864197, 0);
-G2L["14"]["BackgroundTransparency"] = 1;
-G2L["14"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-
--- StarterGui.backdoor.exe v8.Main.Sidebar.Bottom.InviteBtn.Hitbox
-G2L["15"] = Instance.new("TextButton", G2L["13"]);
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["TextTransparency"] = 1;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
--- G2L["15"]["FontFace"] = ;
-G2L["15"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["15"]["Name"] = [[Hitbox]];
-G2L["15"]["Text"] = [[]];
-G2L["15"]["Font"] = Enum.Font.SourceSans;
-G2L["15"]["BackgroundTransparency"] = 1;
-
--- StarterGui.backdoor.exe v8.Main.Sidebar.Bottom.InviteBtn.handler
-G2L["16"] = Instance.new("LocalScript", G2L["13"]);
-G2L["16"]["Name"] = [[handler]];
-
 -- StarterGui.backdoor.exe v8.Main.Sidebar.Bottom.CharCounter
 G2L["17"] = Instance.new("TextLabel", G2L["11"]);
 G2L["17"]["TextWrapped"] = true;
@@ -6715,77 +6678,7 @@ local Magnolia = {
 return Magnolia;
 end;
 };
--- StarterGui.backdoor.exe v8.Main.Sidebar.Bottom.InviteBtn.handler
-local function C_16()
-local script = G2L["16"];
-	-- services
-	local tweenService = game:GetService("TweenService");
-	local httpService = game:GetService("HttpService")
-	
-	-- vars
-	local invCode = "xJHCqm84cW";
-	local httpRequest = (syn and syn.request) or http_request or function() end;
-	
-	-- utls
-	local utils = require(script.Parent.Parent.Parent.Parent.Parent.utils);
-	
-	-- ui
-	local hitbox = script.Parent.Hitbox;
-	local icon = script.Parent.ImageLabel;
-	
-	-- colors
-	local hoverColor = utils.modernColors.ElectricBlue;
-	local leaveColor = icon.ImageColor3;
-	
-	-- tweens
-	local hoverTween = tweenService:Create(icon,
-		utils.tweenInfo.hover,
-		{
-			ImageColor3 = hoverColor
-		}
-	);
-	local leaveTween = tweenService:Create(icon,
-		utils.tweenInfo.hover,
-		{
-			ImageColor3 = leaveColor
-		}
-	);
-	
-	hitbox.MouseEnter:Connect(function()
-		hoverTween:Play();
-	end)
-	
-	hitbox.MouseLeave:Connect(function()
-		leaveTween:Play();
-	end)
-	
-	
-	hitbox.MouseButton1Click:Connect(function()
-		
-	
-		if not httpRequest then warn("Exploit not supported. No HTTP found.") return end
-	
-		httpRequest({
-			Url = "http://127.0.0.1:6463/rpc?v=1",
-			Method = "POST",
-	
-			Headers = {
-				['Content-Type'] = 'application/json',
-				Origin = 'https://discord.com'
-			},
-	
-			Body = httpService:JSONEncode({
-				cmd = 'INVITE_BROWSER',
-				nonce = httpService:GenerateGUID(false),
-				args = {code = invCode}
-			})
-		})
-	end);
-	
-	
-	
-end;
-task.spawn(C_16);
+
 -- StarterGui.backdoor.exe v8.Main.Sidebar.Bottom.CharCounter.handler
 local function C_18()
 local script = G2L["18"];
