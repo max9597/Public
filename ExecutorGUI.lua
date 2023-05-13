@@ -1002,209 +1002,6 @@ G2L["5d"]["Text"] = [[]];
 G2L["5d"]["Font"] = Enum.Font.SourceSans;
 G2L["5d"]["BackgroundTransparency"] = 1;
 
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games
-G2L["5e"] = Instance.new("ImageLabel", G2L["23"]);
-G2L["5e"]["ZIndex"] = 0;
-G2L["5e"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
-G2L["5e"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["5e"]["ImageColor3"] = Color3.fromRGB(14, 14, 14);
-G2L["5e"]["SliceScale"] = 0.029999999329447746;
-G2L["5e"]["Visible"] = false;
-G2L["5e"]["Image"] = [[rbxassetid://3570695787]];
-G2L["5e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["5e"]["Name"] = [[Games]];
-G2L["5e"]["BackgroundTransparency"] = 1;
-G2L["5e"]["Position"] = UDim2.new(0.00032929747248999774, 0, -0.0029999851249158382, 0);
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody
-G2L["5f"] = Instance.new("Frame", G2L["5e"]);
-G2L["5f"]["ZIndex"] = 0;
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["5f"]["BackgroundTransparency"] = 1;
-G2L["5f"]["LayoutOrder"] = 5;
-G2L["5f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["5f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["5f"]["Name"] = [[InnerBody]];
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.Title
-G2L["60"] = Instance.new("TextLabel", G2L["5f"]);
-G2L["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- G2L["60"]["FontFace"] = ;
-G2L["60"]["TextSize"] = 23;
-G2L["60"]["TextColor3"] = Color3.fromRGB(233, 233, 233);
-G2L["60"]["Size"] = UDim2.new(0, 100, 0, 40);
-G2L["60"]["Text"] = [[Games]];
-G2L["60"]["Name"] = [[Title]];
-G2L["60"]["Font"] = Enum.Font.SourceSansBold;
-G2L["60"]["BackgroundTransparency"] = 1;
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame
-G2L["61"] = Instance.new("ScrollingFrame", G2L["5f"]);
-G2L["61"]["Active"] = true;
-G2L["61"]["BorderSizePixel"] = 0;
-G2L["61"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["61"]["BackgroundTransparency"] = 1;
-G2L["61"]["Size"] = UDim2.new(1, 0, 1, -40);
-G2L["61"]["ScrollBarImageColor3"] = Color3.fromRGB(168, 168, 168);
-G2L["61"]["ScrollBarThickness"] = 5;
-G2L["61"]["Position"] = UDim2.new(0, 0, 0, 40);
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.UIListLayout
-G2L["62"] = Instance.new("UIListLayout", G2L["61"]);
-G2L["62"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["62"]["Padding"] = UDim.new(0, 5);
-G2L["62"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy
-G2L["63"] = Instance.new("Frame", G2L["61"]);
-G2L["63"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
-G2L["63"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["63"]["LayoutOrder"] = 1;
-G2L["63"]["Size"] = UDim2.new(1, -50, 0, 100);
-G2L["63"]["Name"] = [[dummy]];
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.UICorner
-G2L["64"] = Instance.new("UICorner", G2L["63"]);
-
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.GameIcon
-G2L["65"] = Instance.new("ImageLabel", G2L["63"]);
-G2L["65"]["ScaleType"] = Enum.ScaleType.Crop;
-G2L["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["65"]["Image"] = [[rbxassetid://7007977848]];
-G2L["65"]["Size"] = UDim2.new(0, 120, 0, 100);
-G2L["65"]["Name"] = [[GameIcon]];
-G2L["65"]["BackgroundTransparency"] = 1;
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.GameIcon.UICorner
-G2L["66"] = Instance.new("UICorner", G2L["65"]);
-
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.GameIcon.fix
-G2L["67"] = Instance.new("Frame", G2L["65"]);
-G2L["67"]["BorderSizePixel"] = 0;
-G2L["67"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
-G2L["67"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["67"]["Size"] = UDim2.new(0, 5, 1, 0);
-G2L["67"]["Position"] = UDim2.new(1, 0, 0, 0);
-G2L["67"]["Name"] = [[fix]];
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.GameIcon.fix.UIGradient
-G2L["68"] = Instance.new("UIGradient", G2L["67"]);
-G2L["68"]["Rotation"] = 90;
-G2L["68"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(168, 168, 168)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.UIGradient
-G2L["69"] = Instance.new("UIGradient", G2L["63"]);
-G2L["69"]["Rotation"] = 90;
-G2L["69"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(168, 168, 168)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Title
-G2L["6a"] = Instance.new("TextLabel", G2L["63"]);
-G2L["6a"]["TextWrapped"] = true;
-G2L["6a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- G2L["6a"]["FontFace"] = ;
-G2L["6a"]["TextSize"] = 23;
-G2L["6a"]["TextColor3"] = Color3.fromRGB(233, 233, 233);
-G2L["6a"]["Size"] = UDim2.new(1, -180, 0, 40);
-G2L["6a"]["Text"] = [[GameName]];
-G2L["6a"]["Name"] = [[Title]];
-G2L["6a"]["Font"] = Enum.Font.SourceSansBold;
-G2L["6a"]["BackgroundTransparency"] = 1;
-G2L["6a"]["Position"] = UDim2.new(0, 130, 0, 0);
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Backdoors
-G2L["6b"] = Instance.new("TextLabel", G2L["63"]);
-G2L["6b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- G2L["6b"]["FontFace"] = ;
-G2L["6b"]["TextSize"] = 15;
-G2L["6b"]["TextColor3"] = Color3.fromRGB(233, 233, 233);
-G2L["6b"]["Size"] = UDim2.new(0, 100, 0, 20);
-G2L["6b"]["Text"] = [[- Backdoors: %d]];
-G2L["6b"]["Name"] = [[Backdoors]];
-G2L["6b"]["Font"] = Enum.Font.SourceSans;
-G2L["6b"]["BackgroundTransparency"] = 1;
-G2L["6b"]["Position"] = UDim2.new(0, 130, 0, 40);
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Date
-G2L["6c"] = Instance.new("TextLabel", G2L["63"]);
-G2L["6c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- G2L["6c"]["FontFace"] = ;
-G2L["6c"]["TextSize"] = 15;
-G2L["6c"]["TextColor3"] = Color3.fromRGB(233, 233, 233);
-G2L["6c"]["Size"] = UDim2.new(0, 100, 0, 20);
-G2L["6c"]["Text"] = [[- Scanned on: %s]];
-G2L["6c"]["Name"] = [[Date]];
-G2L["6c"]["Font"] = Enum.Font.SourceSans;
-G2L["6c"]["BackgroundTransparency"] = 1;
-G2L["6c"]["Position"] = UDim2.new(0, 130, 0, 60);
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Play
-G2L["6d"] = Instance.new("Frame", G2L["63"]);
-G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(0, 186, 78);
-G2L["6d"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["6d"]["Size"] = UDim2.new(0, 30, 1, 0);
-G2L["6d"]["Position"] = UDim2.new(1, 0, 0, 0);
-G2L["6d"]["Name"] = [[Play]];
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Play.UICorner
-G2L["6e"] = Instance.new("UICorner", G2L["6d"]);
-
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Play.fix
-G2L["6f"] = Instance.new("Frame", G2L["6d"]);
-G2L["6f"]["BorderSizePixel"] = 0;
-G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
-G2L["6f"]["Size"] = UDim2.new(0, 5, 1, 0);
-G2L["6f"]["Name"] = [[fix]];
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Play.fix.UIGradient
-G2L["70"] = Instance.new("UIGradient", G2L["6f"]);
-G2L["70"]["Rotation"] = 90;
-G2L["70"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(168, 168, 168)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Play.Icon
-G2L["71"] = Instance.new("ImageLabel", G2L["6d"]);
-G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["71"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["71"]["Image"] = [[rbxassetid://7008236803]];
-G2L["71"]["Size"] = UDim2.new(0, 15, 0, 15);
-G2L["71"]["Name"] = [[Icon]];
-G2L["71"]["BackgroundTransparency"] = 1;
-G2L["71"]["Position"] = UDim2.new(0.5, 3, 0.5, 0);
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.dummy.Play.Hitbox
-G2L["72"] = Instance.new("TextButton", G2L["6d"]);
-G2L["72"]["TextSize"] = 14;
-G2L["72"]["TextTransparency"] = 1;
-G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
--- G2L["72"]["FontFace"] = ;
-G2L["72"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["72"]["Name"] = [[Hitbox]];
-G2L["72"]["Text"] = [[]];
-G2L["72"]["Font"] = Enum.Font.SourceSans;
-G2L["72"]["BackgroundTransparency"] = 1;
-
--- StarterGui.backdoor.exe v8.Main.BodyClipping.Games.InnerBody.ScrollingFrame.info
-G2L["73"] = Instance.new("TextLabel", G2L["61"]);
-G2L["73"]["TextWrapped"] = true;
-G2L["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- G2L["73"]["FontFace"] = ;
-G2L["73"]["TextSize"] = 18;
-G2L["73"]["TextColor3"] = Color3.fromRGB(15, 140, 217);
-G2L["73"]["Size"] = UDim2.new(1, 0, 0, 50);
-G2L["73"]["Text"] = [[Scan games and save here all successfully scanned ones!]];
-G2L["73"]["Name"] = [[info]];
-G2L["73"]["Font"] = Enum.Font.Nunito;
-G2L["73"]["BackgroundTransparency"] = 1;
-
 -- StarterGui.backdoor.exe v8.Main.BodyClipping.Settings
 G2L["74"] = Instance.new("ImageLabel", G2L["23"]);
 G2L["74"]["ZIndex"] = 2;
@@ -2667,7 +2464,6 @@ return {
 	-- modules
 	config = require(script.Parent.config),
 	utils = require(script.Parent.utils),
-	games = require(script.Parent.games),
 	scripthub = require(script.Parent.scripthub),
 	editor = require(script.Parent.editor),
 	toggler = require(script.Parent.Main.Topbar.RightOutline.ImageLabel.toggler),
@@ -2797,10 +2593,6 @@ local canDebug = true;
 
 -- config struct
 --[[export type ScannerConfig = {
-	games: {[number]: {		-- index: gameId
-		backdoor: {string}, -- array of backdoors path
-		timestamp: number 	-- scanned at
-	}},
 	scripts: {[string] : string}, -- index: name, value: code
 	settings: {
 		codeColors: {
@@ -2820,7 +2612,6 @@ local canDebug = true;
 -- utils
 local function newConfigs()
 	return {
-		games = {},
 		scripts = {},
 		settings = {
 			codeColors = table.clone(codeColors),
@@ -2862,7 +2653,6 @@ local function readConfig()
 			codeColors = {}	
 		};
 		configs = {};
-		configs.games = type(parsed.games) == "table" and parsed.games or {};
 		configs.scripts = type(parsed.scripts) == "table" and parsed.scripts or {};
 		-- canDebug
 		if parsed.canDebug == nil then
@@ -6724,7 +6514,6 @@ local script = G2L["21"];
 	-- btn to body
 	local BTN_BODY = {
 		[btns.HomeBtn] = bodies.Executor,
-		[btns.MenuBtn] = bodies.Games,
 		[btns.SettingsBtn] = bodies.Settings
 	};
 	
