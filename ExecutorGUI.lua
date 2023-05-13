@@ -231,31 +231,6 @@ G2L["1b"]["Text"] = [[]];
 G2L["1b"]["Font"] = Enum.Font.SourceSans;
 G2L["1b"]["BackgroundTransparency"] = 1;
 
--- StarterGui.backdoor.exe v8.Main.Sidebar.Top.MenuBtn
-G2L["1c"] = Instance.new("ImageLabel", G2L["19"]);
-G2L["1c"]["ScaleType"] = Enum.ScaleType.Fit;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["ImageColor3"] = Color3.fromRGB(38, 38, 38);
-G2L["1c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["1c"]["Image"] = [[rbxassetid://4370346095]];
-G2L["1c"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1c"]["Name"] = [[MenuBtn]];
-G2L["1c"]["BackgroundTransparency"] = 1;
-G2L["1c"]["Position"] = UDim2.new(0.5, 0, 0, 45);
-
--- StarterGui.backdoor.exe v8.Main.Sidebar.Top.MenuBtn.Hitbox
-G2L["1d"] = Instance.new("TextButton", G2L["1c"]);
-G2L["1d"]["TextSize"] = 14;
-G2L["1d"]["TextTransparency"] = 1;
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
--- G2L["1d"]["FontFace"] = ;
-G2L["1d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1d"]["Name"] = [[Hitbox]];
-G2L["1d"]["Text"] = [[]];
-G2L["1d"]["Font"] = Enum.Font.SourceSans;
-G2L["1d"]["BackgroundTransparency"] = 1;
-
 -- StarterGui.backdoor.exe v8.Main.Sidebar.Top.SettingsBtn
 G2L["1e"] = Instance.new("ImageLabel", G2L["19"]);
 G2L["1e"]["ScaleType"] = Enum.ScaleType.Fit;
